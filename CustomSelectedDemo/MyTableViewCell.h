@@ -15,6 +15,6 @@
 //表示状态
 @property (strong, nonatomic) IBOutlet UILabel *stateLabel;
 
-@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+ 
 
 @end

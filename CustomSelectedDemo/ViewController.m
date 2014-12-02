@@ -26,6 +26,9 @@
 
 	// Do any additional setup after loading the view, typically from a nib.
 }
+- (IBAction)changeTableViewEditing:(id)sender {
+    self.tableView.editing = !self.tableView.editing;
+}
 
 - (void)didReceiveMemoryWarning {
 	[super didReceiveMemoryWarning];
@@ -42,6 +45,11 @@
 	MyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
 	cell.mySelected = [self.selctedIndexPathSet containsObject:indexPath];
 	return cell;
+}
+
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete |UITableViewCellEditingStyleInsert;;
 }
 
 #pragma mark-

@@ -14,6 +14,7 @@
 		18F8BB131A2D9E9900E2322D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F8BB121A2D9E9900E2322D /* Images.xcassets */; };
 		18F8BB161A2D9E9900E2322D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F8BB141A2D9E9900E2322D /* LaunchScreen.xib */; };
 		18F8BB221A2D9E9900E2322D /* CustomSelectedDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8BB211A2D9E9900E2322D /* CustomSelectedDemoTests.m */; };
+		18F8BB2D1A2D9F6400E2322D /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8BB2C1A2D9F6400E2322D /* MyTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		18F8BB1B1A2D9E9900E2322D /* CustomSelectedDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomSelectedDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F8BB201A2D9E9900E2322D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18F8BB211A2D9E9900E2322D /* CustomSelectedDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomSelectedDemoTests.m; sourceTree = "<group>"; };
+		18F8BB2B1A2D9F6400E2322D /* MyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
+		18F8BB2C1A2D9F6400E2322D /* MyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				18F8BB121A2D9E9900E2322D /* Images.xcassets */,
 				18F8BB141A2D9E9900E2322D /* LaunchScreen.xib */,
 				18F8BB051A2D9E9900E2322D /* Supporting Files */,
+				18F8BB2B1A2D9F6400E2322D /* MyTableViewCell.h */,
+				18F8BB2C1A2D9F6400E2322D /* MyTableViewCell.m */,
 			);
 			path = CustomSelectedDemo;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F8BB0E1A2D9E9900E2322D /* ViewController.m in Sources */,
+				18F8BB2D1A2D9F6400E2322D /* MyTableViewCell.m in Sources */,
 				18F8BB0B1A2D9E9900E2322D /* AppDelegate.m in Sources */,
 				18F8BB081A2D9E9900E2322D /* main.m in Sources */,
 			);
@@ -346,6 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CustomSelectedDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -356,6 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CustomSelectedDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
